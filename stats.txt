@@ -1,0 +1,162 @@
+Total events: 50000000
+
+=== Patterns of length 1 ===
+29461236	call <- or
+5892248	call <- shl
+2215350	or <- shl
+1686531	load <- getelementptr
+1585841	getelementptr <- getelementptr
+842948	br <- icmp
+841048	icmp <- add
+760000	add <- load
+738450	shl <- trunc
+736531	mul <- call
+736531	ashr <- load
+736531	call <- ashr
+736531	call <- call
+736531	or <- mul
+380000	sub <- ashr
+380000	add <- add
+201400	getelementptr <- add
+190010	store <- getelementptr
+190000	sub <- load
+190000	sub <- sub
+190000	store <- sub
+190000	ashr <- sub
+190000	ashr <- add
+100700	add <- mul
+89300	add <- or
+1929	getelementptr <- mul
+40	insertelement <- getelementptr
+30	insertelement <- insertelement
+30	srem <- call
+20	sext <- sdiv
+
+=== Patterns of length 2 ===
+22095926	call <- or || call <- or
+5155717	call <- shl || call <- or
+4419186	call <- or || call <- shl
+2209593	or <- shl || call <- or
+2209593	call <- or || or <- shl
+1228631	getelementptr <- getelementptr || load <- getelementptr
+841048	icmp <- add || br <- icmp
+736531	call <- shl || call <- shl
+736531	shl <- trunc || call <- shl
+736531	call <- call || mul <- call
+736531	or <- mul || shl <- trunc
+736531	ashr <- load || call <- ashr
+736531	mul <- call || or <- mul
+736531	call <- ashr || call <- call
+736531	load <- getelementptr || ashr <- load
+736530	call <- or || icmp <- add
+734612	br <- icmp || getelementptr <- getelementptr
+446500	load <- getelementptr || load <- getelementptr
+380000	add <- add || add <- load
+357200	getelementptr <- getelementptr || getelementptr <- getelementptr
+279300	add <- load || add <- load
+201400	add <- load || getelementptr <- getelementptr
+201400	load <- getelementptr || add <- add
+190000	store <- sub || store <- getelementptr
+190000	sub <- ashr || sub <- load
+190000	getelementptr <- add || getelementptr <- getelementptr
+190000	sub <- sub || sub <- ashr
+178600	add <- load || add <- add
+100700	add <- load || ashr <- add
+100700	add <- mul || getelementptr <- add
+
+=== Patterns of length 3 ===
+19886333	call <- or || call <- or || call <- or
+4419186	call <- or || call <- shl || call <- or
+2209593	or <- shl || call <- or || call <- shl
+2209593	call <- or || or <- shl || call <- or
+2209593	call <- shl || call <- or || call <- or
+2209593	call <- shl || call <- or || or <- shl
+1473062	call <- or || call <- or || call <- shl
+736531	getelementptr <- getelementptr || load <- getelementptr || ashr <- load
+736531	call <- call || mul <- call || or <- mul
+736531	call <- ashr || call <- call || mul <- call
+736531	call <- shl || call <- or || call <- shl
+736531	shl <- trunc || call <- shl || call <- shl
+736531	load <- getelementptr || ashr <- load || call <- ashr
+736531	ashr <- load || call <- ashr || call <- call
+736531	mul <- call || or <- mul || shl <- trunc
+736531	or <- mul || shl <- trunc || call <- shl
+736531	call <- shl || call <- shl || call <- or
+736530	call <- or || call <- or || icmp <- add
+736530	call <- or || icmp <- add || br <- icmp
+734612	icmp <- add || br <- icmp || getelementptr <- getelementptr
+734612	br <- icmp || getelementptr <- getelementptr || load <- getelementptr
+446500	getelementptr <- getelementptr || load <- getelementptr || load <- getelementptr
+357200	getelementptr <- getelementptr || getelementptr <- getelementptr || load <- getelementptr
+201400	load <- getelementptr || add <- add || add <- load
+178600	add <- add || add <- load || add <- add
+178600	add <- load || add <- load || add <- load
+178600	add <- load || add <- add || add <- load
+178600	load <- getelementptr || load <- getelementptr || add <- add
+178600	add <- load || getelementptr <- getelementptr || getelementptr <- getelementptr
+100700	add <- mul || getelementptr <- add || getelementptr <- getelementptr
+
+=== Patterns of length 4 ===
+17676740	call <- or || call <- or || call <- or || call <- or
+2209593	call <- or || call <- shl || call <- or || call <- or
+2209593	call <- shl || call <- or || call <- or || call <- or
+2209593	or <- shl || call <- or || call <- shl || call <- or
+2209593	call <- shl || call <- or || or <- shl || call <- or
+2209593	call <- or || or <- shl || call <- or || call <- shl
+1473062	call <- or || call <- or || call <- shl || call <- or
+1473062	call <- or || call <- shl || call <- or || or <- shl
+1473062	call <- or || call <- or || call <- or || call <- shl
+736531	call <- call || mul <- call || or <- mul || shl <- trunc
+736531	call <- ashr || call <- call || mul <- call || or <- mul
+736531	ashr <- load || call <- ashr || call <- call || mul <- call
+736531	getelementptr <- getelementptr || load <- getelementptr || ashr <- load || call <- ashr
+736531	call <- shl || call <- shl || call <- or || or <- shl
+736531	mul <- call || or <- mul || shl <- trunc || call <- shl
+736531	load <- getelementptr || ashr <- load || call <- ashr || call <- call
+736531	or <- mul || shl <- trunc || call <- shl || call <- shl
+736531	call <- shl || call <- or || call <- shl || call <- or
+736531	call <- or || call <- shl || call <- or || call <- shl
+736531	shl <- trunc || call <- shl || call <- shl || call <- or
+736530	call <- or || call <- or || call <- or || icmp <- add
+736530	call <- or || call <- or || icmp <- add || br <- icmp
+734612	br <- icmp || getelementptr <- getelementptr || load <- getelementptr || ashr <- load
+734612	icmp <- add || br <- icmp || getelementptr <- getelementptr || load <- getelementptr
+734612	call <- or || icmp <- add || br <- icmp || getelementptr <- getelementptr
+357200	getelementptr <- getelementptr || getelementptr <- getelementptr || load <- getelementptr || load <- getelementptr
+178600	getelementptr <- getelementptr || load <- getelementptr || load <- getelementptr || add <- add
+178600	load <- getelementptr || load <- getelementptr || add <- add || add <- load
+178600	load <- getelementptr || add <- add || add <- load || add <- add
+178600	add <- add || add <- load || add <- add || add <- load
+
+=== Patterns of length 5 ===
+15467147	call <- or || call <- or || call <- or || call <- or || call <- or
+2209593	call <- shl || call <- or || call <- or || call <- or || call <- or
+2209593	call <- or || call <- shl || call <- or || call <- or || call <- or
+2209593	call <- shl || call <- or || or <- shl || call <- or || call <- shl
+2209593	call <- or || or <- shl || call <- or || call <- shl || call <- or
+1473062	call <- or || call <- or || call <- shl || call <- or || call <- or
+1473062	call <- or || call <- or || call <- or || call <- shl || call <- or
+1473062	call <- or || call <- or || call <- or || call <- or || call <- shl
+1473062	call <- or || call <- shl || call <- or || or <- shl || call <- or
+1473062	or <- shl || call <- or || call <- shl || call <- or || or <- shl
+736531	call <- ashr || call <- call || mul <- call || or <- mul || shl <- trunc
+736531	or <- mul || shl <- trunc || call <- shl || call <- shl || call <- or
+736531	mul <- call || or <- mul || shl <- trunc || call <- shl || call <- shl
+736531	call <- call || mul <- call || or <- mul || shl <- trunc || call <- shl
+736531	call <- shl || call <- or || call <- shl || call <- or || call <- or
+736531	ashr <- load || call <- ashr || call <- call || mul <- call || or <- mul
+736531	load <- getelementptr || ashr <- load || call <- ashr || call <- call || mul <- call
+736531	getelementptr <- getelementptr || load <- getelementptr || ashr <- load || call <- ashr || call <- call
+736531	shl <- trunc || call <- shl || call <- shl || call <- or || or <- shl
+736531	call <- shl || call <- shl || call <- or || or <- shl || call <- or
+736531	or <- shl || call <- or || call <- shl || call <- or || call <- shl
+736531	call <- or || call <- shl || call <- or || call <- shl || call <- or
+736530	call <- or || call <- or || call <- or || icmp <- add || br <- icmp
+736530	call <- or || call <- or || call <- or || call <- or || icmp <- add
+734612	br <- icmp || getelementptr <- getelementptr || load <- getelementptr || ashr <- load || call <- ashr
+734612	call <- or || icmp <- add || br <- icmp || getelementptr <- getelementptr || load <- getelementptr
+734612	icmp <- add || br <- icmp || getelementptr <- getelementptr || load <- getelementptr || ashr <- load
+734612	call <- or || call <- or || icmp <- add || br <- icmp || getelementptr <- getelementptr
+178600	load <- getelementptr || load <- getelementptr || add <- add || add <- load || add <- add
+178600	add <- load || getelementptr <- getelementptr || getelementptr <- getelementptr || load <- getelementptr || load <- getelementptr
+
